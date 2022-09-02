@@ -1,0 +1,13 @@
+const form = document.querySelector('#signup-form');
+const creditCardInput = document.querySelector('#cc');
+const termsCheckbox = document.querySelector('#terms');
+const veggieSelect = document.querySelector('#veggie');
+
+form.addEventListener('submit', function(e){
+ e.preventDefault();
+ alert('Form Submitted');
+ console.log('cc', creditCardInput.value);
+ console.log('terms', termsCheckbox.checked);
+ console.log('veggieSelect', veggieSelect.value);
+
+})
